@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Current Sacco MemberShip</title>
+
+</head>
+<body>
+<div id="links" align="center" >
+<a href="">|HOME|</a>
+<a href="">BIODATA|</a>
+<a href="">LOANS|</a>
+<a href="">SACCO MEMBERSHIP LIST|</a>
+</div>
+<hr>
+<div align="left">
+
+<hr>
+<div align="center">
+<img src="/org.saccosoft/WebContent/resources/theme/images/tools.png" alt="Sacco Soft" 
+width="100" height="100"/>
+
+<table border="1">
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Contact / s</th>
+<th>Address</th>
+<th>Business Type</th>
+<th>Date</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<c:forEach var ="clientbiodata" items ="${clientbiodataList}" >
+ <tr>
+ <td><c:out value ="${clientbiodata.id}" /></td>
+ 
+<td><c:out value ="${clientbiodata.name}" /></td>
+
+<td><c:out value ="${clientbiodata.contact}" /></td>
+
+<td><c:out value ="${clientbiodata.address}" /></td>
+
+<td><c:out value ="${clientbiodata.business_type}" /></td>
+<td><c:out value ="${clientbiodata.date}" /></td>
+<td><a href="editClientById?id=${client.id}">Edit</a>
+    <a href="deleteClientById?id=${employee.id}">Delete</a></td>
+ 
+</tr>
+</c:forEach>
+</tbody>
+</table>
+<h3>
+            <a href="saveClientlink">Create New Client Bio-Data</a>
+        </h3>
+</div>
+</body>
+</html>

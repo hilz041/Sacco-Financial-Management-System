@@ -1,0 +1,63 @@
+h2{
+color:blue
+}
+
+div{
+color:blue;
+font-size: 1em;
+word-spacing:2mm;
+}
+
+table, th , td ,div{
+border: 2px solid green;
+border-collapse: collapse;
+padding: 5px;
+}
+table tr:nth-child(odd) {
+background-color: #f2f2f2;
+}
+table tr:nth-child(even) {
+background-color: #ffffff;
+}
+input {
+     font-size: 120%;
+     color: #5a5854;
+     background-color: #f2f2f2;
+     border: 1px solid #bdbdbd;
+     border-radius: 5px;
+     padding: 5px 5px 5px 30px;
+     background-repeat: no-repeat;
+     background-position: 8px 9px;
+     display: block;
+     margin-bottom: 10px;}
+	
+	
+	#content {
+     overflow: inherit;
+     height: 100%;
+     background-color: #c5d4d4;
+     }
+     
+     legend {
+     background-color: #efefef;
+     border: 1px solid #dcdcdc;
+     border-radius: 10px;
+     padding: 10px 20px;
+     text-align: left;
+     text-transform: uppercase;}
+     
+     table {
+     width:auto;}
+th, td {
+     padding: 7px 10px 10px 10px;}
+th {
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     font-size: 90%;
+     border-bottom: 2px solid #111111;
+     border-top: 1px solid #999;
+     text-align: left;}
+tr.even {
+     background-color: #729fcf;}
+tr:hover {
+     background-color: #c3e6e5;}

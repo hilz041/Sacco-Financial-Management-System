@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Client Loan Data</title>
+</head>
+<body>
+<div id="links" align="center" >
+<a href="">|HOME|</a>
+<a href="">BIODATA|</a>
+<a href="">LOANS|</a>
+<a href="">SACCO MEMBERSHIP LIST|</a>
+</div>
+
+<div align="left">
+
+<div align="center">
+<form action="client_loan" method="post" modelAttribute="ClientLoan">
+<fieldset>
+<legend>ENTER  CLIENT- LOAN DATA HERE</legend>
+<table>
+<tr><td>
+<label>Borrower's Name</label>
+<td><input type="text" name="name" required="required"></td>
+<tr><td><label>Amount Borrowed</label>
+<td><input type="text" name="contact"></td>
+<tr><td><label>Interest Rate %</label>
+<td><input type="text" name="address" required="required"></td>
+<tr><td><label>Repayment Date</label>
+<td><input type="text" name="business_type" required="required"></td>
+<tr><td><label>Value of Loan In Ariers</label>
+<td><input type="text" name="business_type" required="required"></td>
+
+</table>
+<hr>
+<input type="submit" name="submit_info" value="Save Information"/>
+<input type="submit" name="cancel" value="Cancel"/>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

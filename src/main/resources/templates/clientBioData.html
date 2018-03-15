@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Client-Bio Data</title>
+</head>
+
+<body>
+<div id="links" align="center" >
+<a href="">|HOME|</a>
+<a href="">BIODATA|</a>
+<a href="">LOANS|</a>
+<a href="">SACCO MEMBERSHIP LIST|</a>
+</div>
+<hr>
+<div align="left">
+
+<hr>
+
+<div align="center">
+<img src="/Saccoware/src/main/resources/static/images/delete.png" alt="Sacco Soft" 
+width="100"
+	 height="100" style="width: 110px; height: 74px"/><p>
+<form action="client_bio_data" method="post" modelAttribute="ClientBioData">
+
+<fieldset>
+<legend>ENTER  CLIENT BIO-DATA HERE</legend>
+
+
+<table>
+<tr><td><label>Client's Name</label></td><td><input type="text" name="name" required="required"/></td></tr>
+<tr><td><label>Client Contact</label></td><td><input type="text" name="contact"/></td></tr>
+<tr><td><label>Client Address</label></td><td><input type="text" name="address" required="required"/></td></tr>
+<tr><td><label>Business Type</label></td><td><input type="text" name="business_type" required="required"/></td></tr>
+</table></p>
+
+</fieldset>
+ <input type="submit" name="saveDT" value="Save Information"/>
+ <input type="submit" name="cancel" value="Cancel"/>
+</form>
+</div>
+</body>
+
+</html>

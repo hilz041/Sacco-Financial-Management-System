@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Savings form</title>
+</head>
+<body>
+
+<div id="title" align="center"><p><strong><label>CLIENT SAVINGS ENTRY FORM</label></strong></div>
+<div id="deposit_form" align="center">
+<fieldset>
+<legend>Enter Deposit Information</legend>
+<form  id="savings_deposit_form" action="savings_deposit_form"  method="post" modelAttribute="ClientSavings">
+
+<p><label>Customer Name</label><input path="name"/></p>
+<p><label>Transaction type</label><input path="transaction_type"/></p>
+<p><label>Client Savings ID</label><input path="client_savings_id"/></p>
+<p><label>Amount Deposited</label><input path="deposit_amount"/></p>
+<p><label>Date Of Deposit</label><input path="date"/></p>
+<br>
+<input type="button" id="dep" name="depositBtn" value="Deposit Money"/>
+<input type="button" id="can" name="canBtn" value="Cancel"/>
+
+</form>
+
+</fieldset>
+
+
+</div>
+<br>
+
+<div id="withdraw_form" align="center">
+<fieldset>
+<legend>Enter Withdraw Information</legend>
+<form  id="savings_withdraw_form" action="savings_withdraw_form"  method="" modelAttribute="ClientSavings">
+<p><label>Client Savings ID</label><input path="client_savings_id"/></p>
+<p><label>Customer Name</label><input path="name"/></p>
+<p><label>Transaction type</label><input path="transaction_type"/></p>
+<p><label>Amount Withdrawn</label><input path=""/></p>
+<p><label>Date of Withdraw</label><input path="date"/></p>
+<br>
+<input type="button" id="dep" name="withdrawBtn" value="Withdraw Money"/>
+<input type="button" id="cancel" name="cancel" value="Cancel"/>
+
+</form>
+</fieldset>
+
+
+</div>
+</body>
+</html>

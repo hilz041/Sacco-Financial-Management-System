@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sacco Accounts Data</title>
+<link rel="stylesheet" href="theme.css"/>
+</head>
+<body>
+<div id="links" align="center" >
+<a href="">|HOME|</a>
+<a href="">BIODATA|</a>
+<a href="">LOANS|</a>
+<a href="">SACCO MEMBERSHIP LIST|</a>
+</div>
+<hr>
+<div align="left">
+
+<form:form action="sacco_accounts" method="post" modelAttribute="ClientLoan">
+<fieldset>
+<legend><b></b>SACCO-ACCOUNTS DATA </legend>
+<ul>
+  <li><p><label>Total Value of Savings</label>${expr}</p> </li>
+  <li><p><label>Actual Value of Savings</label>${sdfs}</p></li>
+  <li> <p><label>Total Ariers</label>${tyty}</p></li>
+  <li> <p><label>Number of Borrowers</label>${null}</p></li>
+  <li><p><label>Total Loan Disbursed / Given Out</label>${null}</p></li>
+  <li><p><label>Total Loan Paid</label>${null}</p></li>
+  <li><p><label>Date</label>${null}</p></li>
+ 
+</ul>
+<br>
+</fieldset>
+<input type="button" value="Generate report" name="report" />
+<input type="button" value="Print report" name="print" />
+</form>
+</div>
+
+
+</body>
+</html>
